@@ -1,0 +1,24 @@
+{
+	"name": "outputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BITSStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "unpaid_subscribers.csv",
+				"folderPath": "to_finance",
+				"container": "cloud-test-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
