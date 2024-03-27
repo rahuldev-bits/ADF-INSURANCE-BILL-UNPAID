@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "insurance-billing-unpaid"
 		},
-		"inputSQL_connectionString": {
+		"BITSStorage_connectionString": {
 			"value": ""
 		},
-		"BITSStorage_connectionString": {
+		"inputSQL_connectionString": {
 			"value": ""
 		},
 		"containerUri": {

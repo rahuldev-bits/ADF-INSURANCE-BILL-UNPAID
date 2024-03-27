@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "insurance-billing-unpaid"
 		},
-		"inputSQL_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'inputSQL'"
-		},
 		"BITSStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'BITSStorage'"
+		},
+		"inputSQL_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'inputSQL'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +42,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"inputSQL_connectionString": {
-						"value": "[parameters('inputSQL_connectionString')]"
-					},
 					"BITSStorage_connectionString": {
 						"value": "[parameters('BITSStorage_connectionString')]"
+					},
+					"inputSQL_connectionString": {
+						"value": "[parameters('inputSQL_connectionString')]"
 					}
 				}
 			},
