@@ -1,0 +1,12 @@
+{
+	"name": "inputSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "inputSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

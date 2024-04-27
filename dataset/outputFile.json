@@ -1,0 +1,53 @@
+{
+	"name": "outputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BITSStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "unpaid_subscribers.csv",
+				"folderPath": "to_finance",
+				"container": "cloud-test-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "subscriber_id",
+				"type": "String"
+			},
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "contact_number",
+				"type": "String"
+			},
+			{
+				"name": "invoice_date",
+				"type": "String"
+			},
+			{
+				"name": "due_date",
+				"type": "String"
+			},
+			{
+				"name": "amount",
+				"type": "String"
+			}
+		]
+	}
+}
